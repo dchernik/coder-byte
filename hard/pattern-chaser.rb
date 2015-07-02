@@ -17,6 +17,7 @@ def PatternChaser(str)
   len = str.size
   
   # no repeated characters
+  # uniq gives 'undefined method' error when submitted to coderbyte
   return 'no null' if len == str.chars.uniq.size
   
   longest_pattern = nil
@@ -56,3 +57,5 @@ p PatternChaser('sskfssbbb9bbb')        == 'yes bbb'
 p PatternChaser('123456')               == 'no null'
 p PatternChaser('sssskfssbbb9bbbssss')  == 'yes ssss' 
 p PatternChaser('ssssksbbb9bbbssssbbb') == 'yes ssss' 
+p PatternChaser("458933896893")         == 'yes 893'
+p PatternChaser("abcdef12kkk12")        == 'yes 12'
