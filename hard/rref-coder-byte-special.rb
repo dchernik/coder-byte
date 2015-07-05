@@ -105,7 +105,7 @@ def RREFMatrix(strArr)
   # start from before the last one and go to top,
   # substruct from current row the row below it, multiplied
   # by the value of the element with index col in the current row
-  for r in 0...rows #(rows-1).times do
+  for _r in 0...rows #(rows-1).times do
     # column index where we need all 0s above row number row
     col = arr[row].fnz_i
     
